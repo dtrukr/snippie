@@ -3,28 +3,22 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>vwd</string>
+	<string>blockprop</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassImplementation</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (void)viewWillDisappear:(BOOL)animated {
-    &lt;# code #&gt;
-    
-    [super viewWillDisappear:animated];
-}</string>
+	<string>@property (nonatomic, copy) &lt;#returnType#&gt; (^&lt;#blockName#&gt;)(&lt;#parameterTypes#&gt;);</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>2D3CCD83-4654-4585-8B1E-85103FCFF706</string>
+	<string>75B2C911-BBAF-495A-9F55-B2F06D08CC95</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
-	<key>IDECodeSnippetSummary</key>
-	<string>quickly define method</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>View Will Dissappear</string>
+	<string>Block as a property</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>

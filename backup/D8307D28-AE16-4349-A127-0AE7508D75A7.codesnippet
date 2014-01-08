@@ -3,43 +3,30 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>initdict</string>
+	<string>singleton</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (id)initWithDictionary:(NSDictionary *)dict {
-    self = [super init];
-    if (!self) return nil;
+	<string>+ (instancetype)shared&lt;#name#&gt; {
+    static &lt;#class#&gt; *_shared&lt;#name#&gt; = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&amp;onceToken, ^{
+        _shared&lt;#name#&gt; = &lt;#initializer#&gt;;
+    });
     
-    [self unpackFromDictionary:dict];
-    
-    return self;
-}
-
-- (NSDictionary *)toDictionary {
-    NSMutableDictionary *dict = [NSMutableDictionary new];
-    
-    return dict;
-}
-
-#pragma mark - Private
-
-- (void)unpackFromDictionary:(NSDictionary *)dictionary {
-    
+    return _shared&lt;#name#&gt;;
 }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>A50A9B42-6886-4A72-ADB9-80946A739CE8</string>
+	<string>D8307D28-AE16-4349-A127-0AE7508D75A7</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
-	<key>IDECodeSnippetSummary</key>
-	<string>Initializer and Unpack method</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Init With Dictionary</string>
+	<string>singleton</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>

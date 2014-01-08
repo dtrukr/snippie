@@ -8,7 +8,7 @@ It's created every time you back up your snippets and push to git.
 ### Installation
 Fork the repository, to be able to export your own snippets and cheat-sheet. <br>
 You can save the repository wherever you want. <br>
-`$ git clone https://github.com/mneorr/snippie.git xcode-snippets` <br>
+`$ git clone git@github.com:mneorr/xcode-snippets-manager.git xcode-snippets` <br>
 `$ cd xcode-snippets` <br>
 `$ bundle install`
 
@@ -41,10 +41,13 @@ However, if you want to clear the existing snippets, and use the fresh ones, you
 * Image View With Image Named - `imgimg`
 * Release object - `release`
 * Property Custom class - `pobj`
+* Block as a method parameter - `blockmeth`
 * Property From dictionary - `pvfk`
+* Block typedef - `blocktypedef`
 * View did dissapear - `vdd`
 * View Will Dissappear - `vwd`
 * Pragma Mark - `mark`
+* Block as an argument to a method call - `blockarg`
 * Private Pragma mark - `pmark`
 * Better Initializer - `init`
 * View Will Appear - `vwa`
@@ -54,8 +57,11 @@ However, if you want to clear the existing snippets, and use the fresh ones, you
 * Private Category - `privcat`
 * Pragma - View Lifecycle - `pview`
 * View Did Load - `vdl`
+* Block as a property - `blockprop`
 * View Did Unload - `vdu`
 *  - ``
+* Property - ``
+* Block as a local variable - `blockvar`
 * View Did Appear - `vda`
 * NSString with format - `swf`
 * Property String - `pstr`
@@ -63,6 +69,7 @@ However, if you want to clear the existing snippets, and use the fresh ones, you
 * Value For Key - `vfk`
 * Property NSNumber - `pnum`
 * UIViewController pragma marks - `conpragmas`
+* singleton - `singleton`
 * Singleton - `singleton`
 * Image named - `inamed`
 * Property IBOutlet custom class - `pibo`
